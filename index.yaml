@@ -115,6 +115,28 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2023-09-08T19:54:02.698812033Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 3.3.3
+    - condition: msp-prometheus-collector.enabled
+      name: msp-prometheus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 3.3.0
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 69de958021eddfce3a2a0e8762e606ea97ecebcfa3e6204c204307a17d347776
+    keywords:
+    - security-dashboard
+    - msp-prometheus-collector
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.2023.3-sdb-lcm-pc-core-services-2023.8-rc-1/pc-app-onprem-3.3.5.tgz
+    version: 3.3.5
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2023-08-22T20:27:40.796804255Z"
     dependencies:
     - condition: security-dashboard.enabled
@@ -219,4 +241,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2023-09-08T19:48:47.747079442Z"
+generated: "2023-09-08T19:54:02.697016931Z"
