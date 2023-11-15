@@ -3,10 +3,10 @@ entries:
   nutanix-k8s-agent:
   - apiVersion: v2
     appVersion: 1.0.426
-    created: "2023-11-15T18:49:50.516900292Z"
+    created: "2023-11-15T20:00:27.91211667Z"
     description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
       Infrastructure onto Prism Central.
-    digest: e477728acb23ebba05d3d81caa53e0332de49bec1414a9f1c5ccb81c662ad860
+    digest: 8eda77397fc6cb7032a1874027c1ef487d631c7bf34e2bbf3102c3fe5d452b03
     name: nutanix-k8s-agent
     type: application
     urls:
@@ -270,4 +270,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2023-11-15T18:49:50.513053989Z"
+generated: "2023-11-15T20:00:27.906495768Z"
