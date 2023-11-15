@@ -1,4 +1,3 @@
 # Nutanix Helm Charts repository
 
-License
-[nutanix-license-and-services-agreement](nutanix-license-and-services-agreement.pdf)
+All source code and other contents in this repository are covered by the Nutanix License and Services Agreement, which is located at https://www.nutanix.com/legal/eula 
