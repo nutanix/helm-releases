@@ -1,5 +1,50 @@
 apiVersion: v1
 entries:
+  nai-core:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-08-06T11:55:57.803025088Z"
+    description: A Helm chart for NAI core components
+    digest: 4f080246f553d97188979c85b26746686e11913ad98ac378cec5399612da6447
+    name: nai-core
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-core-1.0.0-rc0.tgz
+    version: 1.0.0-rc0
+  nai-knative-istio-controller:
+  - apiVersion: v2
+    appVersion: 1.13.1
+    created: "2024-08-06T11:55:57.803564152Z"
+    description: A Helm chart for the Knative Istio controller which integrates Istio
+      with Knative Serving
+    digest: 82811eb2a83dafc094e98389fd10fd47942659153a4a793e8ebb33cd1cf15fff
+    name: nai-knative-istio-controller
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-knative-istio-controller-1.13.1.tgz
+    version: 1.13.1
+  nai-knative-serving:
+  - apiVersion: v2
+    appVersion: 1.13.1
+    created: "2024-08-06T11:55:57.804806911Z"
+    description: A Helm chart for Knative serving
+    digest: feff8ef2cfbd538d484373ef169cb351fd5c320be012af5a3336d8689fc437cd
+    name: nai-knative-serving
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-knative-serving-1.13.1.tgz
+    version: 1.13.1
+  nai-knative-serving-crds:
+  - apiVersion: v2
+    appVersion: 1.13.1
+    created: "2024-08-06T11:55:57.808503276Z"
+    description: A Helm chart for installing Knative Serving CRDs
+    digest: d5cb46e05dc8c290621ec358798a8813c3f30b9e62c68176f279ae47f794123f
+    name: nai-knative-serving-crds
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-knative-serving-crds-1.13.1.tgz
+    version: 1.13.1
   nutanix-csi-snapshot:
   - annotations:
       artifacthub.io/changes: |
@@ -576,4 +621,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2024-07-24T04:42:49.422110601Z"
+generated: "2024-08-06T11:55:57.801000691Z"
