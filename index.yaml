@@ -24,36 +24,36 @@ entries:
   nai-knative-istio-controller:
   - apiVersion: v2
     appVersion: 1.13.1
-    created: "2024-08-06T11:55:57.803564152Z"
+    created: "2024-10-22T04:48:19.423395229Z"
     description: A Helm chart for the Knative Istio controller which integrates Istio
       with Knative Serving
-    digest: 82811eb2a83dafc094e98389fd10fd47942659153a4a793e8ebb33cd1cf15fff
+    digest: e4de8b2d34c0b990493e24a183c825cc42f18bd8cbdbf777ca6266f056e785e0
     name: nai-knative-istio-controller
     type: application
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-knative-istio-controller-1.13.1.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/nai-knative-charts/nai-knative-istio-controller-1.13.1.tgz
     version: 1.13.1
   nai-knative-serving:
   - apiVersion: v2
     appVersion: 1.13.1
-    created: "2024-08-06T11:55:57.804806911Z"
+    created: "2024-10-22T04:48:19.425361239Z"
     description: A Helm chart for Knative serving
-    digest: feff8ef2cfbd538d484373ef169cb351fd5c320be012af5a3336d8689fc437cd
+    digest: 97619d4534a90080a1269c3b326c8915a3ca86621eefdeb43db60ace2b6343f5
     name: nai-knative-serving
     type: application
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-knative-serving-1.13.1.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/nai-knative-charts/nai-knative-serving-1.13.1.tgz
     version: 1.13.1
   nai-knative-serving-crds:
   - apiVersion: v2
     appVersion: 1.13.1
-    created: "2024-08-06T11:55:57.808503276Z"
+    created: "2024-10-22T04:48:19.427668659Z"
     description: A Helm chart for installing Knative Serving CRDs
-    digest: d5cb46e05dc8c290621ec358798a8813c3f30b9e62c68176f279ae47f794123f
+    digest: a9e1910218d6ff332f2beae685df232e5a9dae89d2bf61269a68e474091ba1d2
     name: nai-knative-serving-crds
     type: application
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/nai-core-1.0.0-rc0/nai-knative-serving-crds-1.13.1.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/nai-knative-charts/nai-knative-serving-crds-1.13.1.tgz
     version: 1.13.1
   nutanix-csi-snapshot:
   - annotations:
@@ -697,4 +697,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2024-09-05T23:53:30.686238368Z"
+generated: "2024-10-22T04:48:19.422661702Z"
