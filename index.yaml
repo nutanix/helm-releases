@@ -1,5 +1,20 @@
 apiVersion: v1
 entries:
+  cisco-device-connector:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.1
+    created: "2024-12-06T20:06:58.607793538Z"
+    description: A Helm chart for Kubernetes
+    digest: cfe24ae9fab8178bb49d931d300ce99b07f60470210355abd39f30631ba6e4fe
+    maintainers:
+    - name: Nutanix Hyperflex Team
+    name: cisco-device-connector
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cisco-oem.2024.3-rc-1/cisco-device-connector-4.3.0.tgz
+    version: 4.3.0
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -864,4 +879,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2024-12-03T19:03:50.801165003Z"
+generated: "2024-12-06T20:06:58.606232857Z"
