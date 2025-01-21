@@ -944,4 +944,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2025-01-21T20:44:58.877190546Z"
+generated: "2025-01-21T20:46:58.349460655Z"
