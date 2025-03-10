@@ -15,6 +15,25 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/cisco-oem.2024.3-rc-1/cisco-device-connector-4.3.0.tgz
     version: 4.3.0
+  flux:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-10T19:35:50.850146372Z"
+    description: A Helm chart for Flux Service
+    digest: 1541d4068a13f98788e6a5afa814f04c00a1ee28a351621761375332bebd3c8e
+    keywords:
+    - nutanix
+    - power
+    maintainers:
+    - email: rajamokshagna.k@nutanix.com
+      name: Mokshagna Krishna
+    name: flux
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/flux-chart-1.0.0-prod/flux-1.0.0.tgz
+    version: 1.0.0
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -1049,4 +1068,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2025-03-07T20:50:04.790200853Z"
+generated: "2025-03-10T19:35:50.848637952Z"
