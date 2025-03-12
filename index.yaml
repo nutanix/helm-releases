@@ -700,6 +700,44 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2025-03-12T21:02:39.757208143Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.12
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.14
+    - condition: licensing-app.enabled
+      name: licensing-app
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.4
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.7
+    - condition: mitra-service.enabled
+      name: mitra-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.6
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 775989dd4570ec628fd6a2199723aa28be566acd490d3b3cf366066872ad453e
+    keywords:
+    - security-dashboard
+    - objects-lite
+    - marina
+    - licensing-app
+    - batch-service
+    - mitra-service
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.2024.3.1-rc-3/pc-app-onprem-4.3.34.tgz
+    version: 4.3.34
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2024-12-03T06:30:10.706752258Z"
     dependencies:
     - condition: security-dashboard.enabled
@@ -1068,4 +1106,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2025-03-11T11:18:23.51722957Z"
+generated: "2025-03-12T21:02:39.729685564Z"
