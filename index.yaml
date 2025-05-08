@@ -37,6 +37,16 @@ entries:
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2025-05-08T07:39:40.340874674Z"
+    description: A Helm chart for NAI core components
+    digest: 868cd8de8e640d25fe70a7f30d733cabaf3e600f3a538c39647f7eff2fcebc97
+    name: nai-core
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-core-2.3.0/nai-core-2.3.0.tgz
+    version: 2.3.0
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2025-03-06T08:31:28.806042896Z"
     description: A Helm chart for NAI core components
     digest: ac2120342915272a0e2d9e90307b55f734f34e566d9af2faf41cec36cb748531
@@ -1144,4 +1154,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-onprem-2.9.8.tgz
     version: 2.9.8
-generated: "2025-05-01T23:06:27.126750114Z"
+generated: "2025-05-08T07:39:40.33771096Z"
