@@ -954,6 +954,44 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/ncm-tunnel-server-1.0.88.tgz
     version: 1.0.88
+  ndk:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: NDK
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+    apiVersion: v2
+    appVersion: 1.3.0-10496
+    created: "2025-06-18T17:25:21.929851006Z"
+    description: Helm chart for Nutanix Data Services for Kubernetes (NDK). NDK provides
+      for application-centric data management services for containerized workloads
+      managed by Kubernetes.
+    digest: 8a384c57dd302cb0aa28870ca3c768c26dfda61095d113265b52d808ad481865
+    home: https://github.com/nutanix-core/k8s-juno
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - Snapshot
+    - AppProtection
+    kubeVersion: '>= 1.26.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: ndk
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/ndk-1.3-helm/ndk-1.3.0-10496.tgz
+    version: 1.3.0-10496
   neuron:
   - annotations:
       appType: Service
@@ -2316,4 +2354,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-18T08:24:05.289768856Z"
+generated: "2025-06-18T17:25:21.920041226Z"
