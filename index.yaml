@@ -384,6 +384,60 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/insights-server-chakr-0.0.13.tgz
     version: 0.0.13
+  ltss:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-23T07:42:26.988980785Z"
+    dependencies:
+    - condition: ltss-tools.enabled
+      name: ltss-tools
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-zk.enabled
+      name: ltss-zk
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-idf-chakr-cm.enabled
+      name: ltss-idf-chakr-cm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-idf-chakr-db.enabled
+      name: ltss-idf-chakr-db
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-idf.enabled
+      name: ltss-idf
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-chakr-cm.enabled
+      name: ltss-chakr-cm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-chakr-db.enabled
+      name: ltss-chakr-db
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-data-svc.enabled
+      name: ltss-data-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-janitor-svc.enabled
+      name: ltss-janitor-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    - condition: ltss-ctrl-svc.enabled
+      name: ltss-ctrl-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.3.0
+    description: A Helm chart for Kubernetes
+    digest: 49ba5ab02cbd0ffd6f52ceb64b02a58f75ae1673cb225a177e48fcdbe8d72d06
+    name: ltss
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/ltss-1.3-helm-rc2/ltss-1.3.0.tgz
+    version: 1.3.0
   mercury:
   - annotations:
       appType: Service
@@ -2458,4 +2512,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-21T17:39:35.922329543Z"
+generated: "2025-06-23T07:42:26.946146127Z"
