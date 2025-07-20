@@ -525,6 +525,17 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/nai-knative-charts/nai-knative-serving-crds-1.13.1.tgz
     version: 1.13.1
+  native-pc:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:54.95187449Z"
+    description: A Helm chart for CN-AOS Control Plane
+    digest: a9f3a36ab559bc76b50adcb9bc44e1cc941ee24746110ea8d51d879e500c5241
+    name: native-pc
+    type: library
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/native-pc-1.0.0-141.tgz
+    version: 1.0.0-141
   ncm-adonis-service:
   - annotations:
       appType: Service
@@ -1022,6 +1033,164 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/ncm-tunnel-server-1.0.88.tgz
     version: 1.0.88
+  ncs-cluster-operator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:54.981849275Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix.github.io/helm-releases
+      version: ~1.0.0-1-prod
+    description: A Helm chart for NCS Cluster Operator
+    digest: 8e23628b380b7bb9932eed4f2d9410a911dc39031bf155225731f05e30d0dcc8
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-cluster-operator-1.0.0-2330-prod.tgz
+    version: 1.0.0-2330-prod
+  ncs-cni:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:54.984729736Z"
+    description: A Helm chart for ncs-cni
+    digest: 50452154b1e25c76d9045ff3bdd4e27738af84dcc565763d3cb91fa96856de3c
+    name: ncs-cni
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-cni-1.0.0-755-prod.tgz
+    version: 1.0.0-755-prod
+  ncs-collector-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:54.985295912Z"
+    description: A Helm chart for ncs-collector
+    digest: f41ff668b9ae600c2e66e003388b8d55d7311e8284438758d809584023e8d5fd
+    name: ncs-collector-chart
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-collector-chart-1.0.0-174-prod.tgz
+    version: 1.0.0-174-prod
+  ncs-installer-agent:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:54.998212719Z"
+    description: NCS Installer Agent
+    digest: 99f666602d06f0ecf54f1ab758b4803bb30ceba98b2441851ac48f670ff29eaa
+    name: ncs-installer-agent
+    type: library
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-installer-agent-1.0.0-2622-prod.tgz
+    version: 1.0.0-2622-prod
+  ncs-metadata-exporter:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:55.000348208Z"
+    description: A Helm chart for ncs-metadata-exporter
+    digest: fe5b58420737b47186ea13170bd47e5fee026f41d2fa3916e15f3829c38c28f6
+    name: ncs-metadata-exporter
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-metadata-exporter-1.0.0-228-prod.tgz
+    version: 1.0.0-228-prod
+  ncs-ndk:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: NDK
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2025-07-20T15:49:55.008446242Z"
+    description: Helm chart for Nutanix Data Services for Kubernetes (NDK). NDK provides
+      for application-centric data management services for containerized workloads
+      managed by Kubernetes.
+    digest: fc7d6b3cd785204ac52febdc3d95bfe51363e8ad6e2ba998c367297677d9753e
+    home: https://github.com/nutanix-core/k8s-juno
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - Snapshot
+    - AppProtection
+    kubeVersion: '>= 1.26.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: ncs-ndk
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-ndk-1.2.0-prod.tgz
+    version: 1.2.0-prod
+  ncs-nutanix-csi-storage:
+  - annotations:
+      artifacthub.io/changes: |
+        - Update Nutanix CSI Driver to 3.2.0
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: Nutanix CSI Storage
+      artifacthub.io/links: |
+        - name: Nutanix CSI Driver documentation
+          url: https://portal.nutanix.com/page/documents/details?targetId=CSI-Volume-Driver-v3_2:CSI-Volume-Driver-v3_2
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
+    apiVersion: v1
+    appVersion: 3.2.0-prod
+    created: "2025-07-20T15:49:55.010579646Z"
+    description: Nutanix Container Storage Interface (CSI) Driver
+    digest: 6ab7eb1df9394a7d562281255d864fa7878dd921944e6124003dbd56f8dbcdfa
+    home: https://github.com/nutanix/helm
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - CSI
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: ncs-nutanix-csi-storage
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-nutanix-csi-storage-3.2.0-prod.tgz
+    version: 3.2.0-prod
+  ncs-nxctl:
+  - apiVersion: v2
+    appVersion: v1.0.a1
+    created: "2025-07-20T15:49:55.592453435Z"
+    description: A Helm chart for ncs-nxctl
+    digest: 0addc5a4ebc4f6e065647ea92a7685417fb3219cdc538fa7fd6c65fcf01007b9
+    name: ncs-nxctl
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-nxctl-1.0.0-1657-prod.tgz
+    version: 1.0.0-1657-prod
+  ncs-orchestrator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T15:49:55.607343957Z"
+    description: A Library Helm chart for ncs-orchestrator
+    digest: c68a7443e9f2b0cd859eda1531f70d4a348ed3f7333b5d4c711403ad49299a6c
+    name: ncs-orchestrator
+    type: library
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-orchestrator-1.0.0-2622-prod.tgz
+    version: 1.0.0-2622-prod
   ndk:
   - annotations:
       artifacthub.io/changes: |
@@ -2563,4 +2732,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-25T20:43:48.939752059Z"
+generated: "2025-07-20T15:49:54.908996387Z"
