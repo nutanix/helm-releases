@@ -1033,6 +1033,35 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/ncm-tunnel-server-1.0.88.tgz
     version: 1.0.88
+  ncs-app-aws:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2025-07-20T17:19:56.399556299Z"
+    dependencies:
+    - name: ncs-cluster-operator
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.0.0-2330-prod
+    - name: ncs-nxctl
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.0.0-1657-prod
+    - name: ncs-metadata-exporter
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.0.0-228-prod
+    - name: ncs-collector-chart
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.0.0-174-prod
+    description: An Umbrella Helm Chart representing the NCS app
+    digest: 14ea1131167402629585cc2f926c7b68737199f9c6aa738e4e8b6990da79f87a
+    keywords:
+    - ncs-cluster-operator
+    - ncs-nxctl
+    - ncs-metadata-exporter
+    - ncs-collector-chart
+    name: ncs-app-aws
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-manifests/ncs-app-aws-1.0.0.tgz
+    version: 1.0.0
   ncs-cluster-operator:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -1081,6 +1110,21 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-helms/ncs-installer-agent-1.0.0-2622-prod.tgz
     version: 1.0.0-2622-prod
+  ncs-manifest:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T17:19:56.413227744Z"
+    dependencies:
+    - name: ncs-installer-agent
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.0.0-2622-prod
+    description: A Helm chart for ncs-manifest
+    digest: 14906423554e6af41212d8d31663871d6df96be87c86282e1af298f446c3c425
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-1-0-0-manifests/ncs-manifest-1.0.0.tgz
+    version: 1.0.0
   ncs-metadata-exporter:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -2732,4 +2776,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-20T15:49:54.908996387Z"
+generated: "2025-07-20T17:19:55.690082059Z"
