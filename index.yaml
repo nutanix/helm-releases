@@ -483,6 +483,16 @@ entries:
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2025-08-07T04:52:27.293708111Z"
+    description: A Helm chart for NAI core components
+    digest: a752a5a79baf6f4db23760ca3ca051f766b7946cf2aaeb48939bd487657b4b99
+    name: nai-core
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-core-2.4.0/nai-core-2.4.0.tgz
+    version: 2.4.0
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2025-05-08T07:39:40.340874674Z"
     description: A Helm chart for NAI core components
     digest: 868cd8de8e640d25fe70a7f30d733cabaf3e600f3a538c39647f7eff2fcebc97
@@ -2818,4 +2828,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-21T06:51:57.458436177Z"
+generated: "2025-08-07T04:52:27.288466676Z"
