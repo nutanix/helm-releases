@@ -2027,7 +2027,7 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2024-12-03T06:30:10.700018542Z"
+    created: "2025-10-23T06:47:36.631800939Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
       name: clustermgmt-nc2
@@ -2038,13 +2038,13 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 4.3.7
     description: An Umbrella Helm chart representing the PC Platform
-    digest: 7a2ec945581c429c4f9bd9d01152f99824f0f3d5ca31ecc447b0bd259e97c4b3
+    digest: b8f2fe5c972f0223347551a8d5523184d5019b8551ee5657d96ddc3793c98c04
     keywords:
     - security-dashboard
     - batch-service
     name: pc-app-aws
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/pc.2024.3-rc-5/pc-app-aws-4.3.4.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/pc.2024.3.1.9-rc-2/pc-app-aws-4.3.4.tgz
     version: 4.3.4
   - annotations:
       appType: Application
@@ -2200,7 +2200,7 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2024-12-03T06:30:10.701873355Z"
+    created: "2025-10-23T06:47:36.633284396Z"
     dependencies:
     - condition: msp-prometheus-collector.enabled
       name: msp-prometheus-collector
@@ -2211,13 +2211,13 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 4.3.7
     description: An Umbrella Helm chart representing the PC Platform
-    digest: 8800e3406f7a3fc7773eb915b40adb817d077fd333882683d054c19f99951bd4
+    digest: b6adcc90a919f43bcd7b9069129bf17dc43ffec3121efd71e5c12c77dcd26166
     keywords:
     - msp-prometheus-collector
     - batch-service
     name: pc-app-azure
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/pc.2024.3-rc-5/pc-app-azure-4.3.4.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/pc.2024.3.1.9-rc-2/pc-app-azure-4.3.4.tgz
     version: 4.3.4
   - annotations:
       appType: Application
@@ -3102,4 +3102,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-10-21T05:46:00.810555524Z"
+generated: "2025-10-23T06:47:36.629960511Z"
