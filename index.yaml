@@ -2326,6 +2326,24 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.2022.9-rc-4/pc-app-azure-2.9.1.tgz
     version: 2.9.1
+  pc-app-gcp:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2025-10-24T05:59:31.727274589Z"
+    dependencies:
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.4
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 28d5385ce52532733b980b39141ccb60f892edbe1078c7bbbb30abc2222e97e5
+    keywords:
+    - batch-service
+    name: pc-app-gcp
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.3.1.1-rc-2/pc-app-gcp-7.3.1.tgz
+    version: 7.3.1
   pc-app-onprem:
   - annotations:
       appType: Application
@@ -3102,4 +3120,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-10-23T06:47:36.629960511Z"
+generated: "2025-10-24T05:59:31.725966222Z"
