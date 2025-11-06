@@ -497,6 +497,29 @@ entries:
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2025-11-06T07:17:45.254996622Z"
+    dependencies:
+    - name: oauth2-proxy
+      repository: ""
+      version: 7.12.17
+    - name: nai-clickhouse-keeper
+      repository: ""
+      version: 1.1.0
+    - name: nai-clickhouse-server
+      repository: ""
+      version: 1.0.6
+    - name: nai-clickhouse-schemas
+      repository: ""
+      version: 1.1.3
+    description: A Helm chart for NAI core components
+    digest: b9b2ce4938634e318d6970f51718ab622f78fa7850589a192f06793de067656b
+    name: nai-core
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-2.5.0-helm/nai-core-2.5.0.tgz
+    version: 2.5.0
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2025-08-07T04:52:27.293708111Z"
     description: A Helm chart for NAI core components
     digest: a752a5a79baf6f4db23760ca3ca051f766b7946cf2aaeb48939bd487657b4b99
@@ -549,6 +572,32 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/nai-knative-charts/nai-knative-serving-crds-1.13.1.tgz
     version: 1.13.1
+  nai-operators:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-11-06T07:17:45.272305574Z"
+    dependencies:
+    - name: nai-clickhouse-crd
+      repository: ""
+      version: 1.0.0
+    - name: nai-clickhouse-operator
+      repository: ""
+      version: 1.0.1
+    - condition: naiAIGateway.enabled
+      name: ai-gateway-crds-helm
+      repository: ""
+      version: 0.0.0-791036aaf751787ed2719050d5086b2ba8642f1a
+    - condition: naiAIGateway.enabled
+      name: ai-gateway-helm
+      repository: ""
+      version: 0.0.0-791036aaf751787ed2719050d5086b2ba8642f1a
+    description: A Helm chart for CRDs and Operators required by NAI Core
+    digest: 4495648d383d5c495953b02071684b85b9dd6bd9f911923394dd6ed9cd84e630
+    name: nai-operators
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-2.5.0-helm/nai-operators-2.5.0.tgz
+    version: 2.5.0
   native-pc:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -3157,4 +3206,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-11-01T17:53:19.382042231Z"
+generated: "2025-11-06T07:17:45.20725231Z"
