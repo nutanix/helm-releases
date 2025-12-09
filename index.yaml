@@ -2344,6 +2344,22 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/nutanix-csi-storage-3.0.0-2458/nutanix-csi-storage-3.0.0-2458.tgz
     version: 3.0.0-2458
+  nutanix-flow-cni:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-12-09T19:47:29.824618487Z"
+    dependencies:
+    - name: nutanix-core-flow-ovn-kubernetes
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm
+      version: 1.0.0
+    description: A Helm chart for Flow CNI
+    digest: fca0a725b4f6435bbeb97ff979ba3dbd3ab3867729c4d170f3a6724cab75c1fa
+    kubeVersion: '>= 1.28.0'
+    name: nutanix-flow-cni
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nutanix-flow-cni-1.0.0/nutanix-flow-cni-1.0.0.tgz
+    version: 1.0.0
   nutanix-infra-data-receiver:
   - annotations:
       appType: Service
@@ -3726,4 +3742,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-12-09T10:08:02.16694792Z"
+generated: "2025-12-09T19:47:29.811408384Z"
