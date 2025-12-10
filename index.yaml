@@ -640,6 +640,25 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/insights-server-chakr-0.0.13.tgz
     version: 0.0.13
+  konnector-agent:
+  - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2025-12-10T09:00:38.227362552Z"
+    description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
+      Infrastructure onto Prism Central.
+    digest: 96359aa73ceb41f7b1449c9211cc5f3b6fc1e5ddc3ea314fba42dd9321989936
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    - email: manoj.surudwad@nutanix.com
+      name: manoj-nutanix
+    - email: vijayaraghavan.r@nutanix.com
+      name: vijayaraghavanr31
+    name: konnector-agent
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/konnector-agent/konnector-agent-1.3.0.tgz
+    version: 1.3.0
   ltss:
   - annotations:
       appType: Application
@@ -3742,4 +3761,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-12-09T19:47:29.811408384Z"
+generated: "2025-12-10T09:00:38.223866468Z"
