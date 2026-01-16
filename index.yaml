@@ -1910,6 +1910,44 @@ entries:
   nutanix-csi-snapshot:
   - annotations:
       artifacthub.io/changes: |
+        - Update Snapshot Controller to v8.3.0
+        - Support Kubernetes >= 1.25 only
+        - Add VolumeGroupSnapshot support (v1beta1)
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: Nutanix CSI Snapshot
+      artifacthub.io/links: |
+        - name: Kubernetes CSI Developer Documentation
+          url: https://kubernetes-csi.github.io/docs/
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-storage
+    apiVersion: v2
+    appVersion: 8.3.0
+    created: "2026-01-16T05:07:13.207324724Z"
+    description: Snapshot components required for CSI snapshotting and not specific
+      to any CSI driver
+    digest: 8510a04acdd44e3fdb1ebe5211cbcd1bfc4b8bc5f02c74395cdc3a8fed031f75
+    home: https://github.com/nutanix/helm
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Snapshot
+    - SnapshotClass
+    - CSI
+    kubeVersion: '>= 1.25.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: nutanix-csi-snapshot
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nutanix-csi-snapshot-8.3.0/nutanix-csi-snapshot-8.3.0.tgz
+    version: 8.3.0
+  - annotations:
+      artifacthub.io/changes: |
         - Update Snapshot Controller to v6.3.3
       artifacthub.io/containsSecurityUpdates: "true"
       artifacthub.io/displayName: Nutanix CSI Snapshot
@@ -3950,4 +3988,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-01-14T08:09:45.919368311Z"
+generated: "2026-01-16T05:07:13.204557648Z"
