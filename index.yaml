@@ -975,7 +975,7 @@ entries:
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-23T07:07:38.661114445Z"
+    created: "2026-02-23T09:54:52.167638362Z"
     dependencies:
     - name: oauth2-proxy
       repository: ""
@@ -990,11 +990,11 @@ entries:
       repository: ""
       version: 1.3.0
     description: A Helm chart for NAI core components
-    digest: 6f0c49d2643f87c00664295b6d28ff9ceb4d38223fdd51982f61e1be8b1491b2
+    digest: 33655256636cbae811d27c844d184baf2119764c506949fc16620c8afb9168d2
     name: nai-core
     type: application
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/nai-core-2.6.0-helm/nai-core-2.6.0.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/nai-2.6.0-helm-release/nai-core-2.6.0.tgz
     version: 2.6.0
   - apiVersion: v2
     appVersion: 0.1.0
@@ -1074,6 +1074,31 @@ entries:
     - https://github.com/nutanix/helm-releases/releases/download/nai-knative-charts/nai-knative-serving-crds-1.13.1.tgz
     version: 1.13.1
   nai-operators:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-23T09:54:52.183745189Z"
+    dependencies:
+    - name: nai-clickhouse-crd
+      repository: ""
+      version: 1.0.0
+    - name: nai-clickhouse-operator
+      repository: ""
+      version: 1.1.0
+    - condition: naiAIGateway.enabled
+      name: ai-gateway-crds-helm
+      repository: ""
+      version: v0.5.0-rc1
+    - condition: naiAIGateway.enabled
+      name: ai-gateway-helm
+      repository: ""
+      version: v0.5.0-rc1
+    description: A Helm chart for CRDs and Operators required by NAI Core
+    digest: 1c1c2b6a7a092538a45d0ec1a7fbfaf60606f06ed563f39ad10e32e0692c615d
+    name: nai-operators
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nai-2.6.0-helm-release/nai-operators-2.6.0.tgz
+    version: 2.6.0
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2025-11-06T07:17:45.272305574Z"
@@ -4342,4 +4367,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-23T07:07:38.603456861Z"
+generated: "2026-02-23T09:54:52.141468627Z"
