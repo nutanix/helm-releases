@@ -5091,6 +5091,43 @@ entries:
       artifacthub.io/displayName: Nutanix CSI Storage
       artifacthub.io/links: |
         - name: Nutanix CSI Driver documentation
+          url: https://portal.nutanix.com/page/documents/details?targetId=CSI-Volume-Driver-v3_7:CSI-Volume-Driver-v3_7
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot'
+    apiVersion: v1
+    appVersion: 3.7.0
+    created: "2026-04-29T10:20:34.372592191Z"
+    description: Nutanix Container Storage Interface (CSI) Driver
+    digest: a00c4c8405f5c30c1fa9f1b9039530b4c6e1707a27acfcb17a14633bab8e8c1e
+    home: https://github.com/nutanix/helm
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - CSI
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: nutanix-csi-storage
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nutanix-csi-storage-3.7.0/nutanix-csi-storage-3.7.0.tgz
+    version: 3.7.0
+  - annotations:
+      artifacthub.io/changes: |
+        - Update Nutanix CSI Driver to 3.7.0
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: Nutanix CSI Storage
+      artifacthub.io/links: |
+        - name: Nutanix CSI Driver documentation
           url: https://portal.nutanix.com/page/documents/details?targetId=CSI-Volume-Driver-v3_6:CSI-Volume-Driver-v3_6
       artifacthub.io/maintainers: |
         - name: Nutanix Cloud Native Team
@@ -7767,4 +7804,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-04-27T18:16:57.317497069Z"
+generated: "2026-04-29T10:20:34.365166385Z"
