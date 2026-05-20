@@ -676,15 +676,15 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.16.1
-    created: "2026-04-27T17:50:09.600856004Z"
+    created: "2026-05-20T14:23:16.568369851Z"
     description: A Helm chart for Kubernetes
-    digest: d1b5168da6b168a59c3097fb340f3aa4359b013ebd264662fe6d9ec3fe85ab4d
+    digest: 43cc2b9f4afb45b5754cf53990b882364d845855820f9849daede81ed0e45e1b
     maintainers:
     - name: Nutanix Hyperflex Team
     name: cisco-device-connector
     type: application
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/cisco-device-connector-7.5.0-rc2/cisco-device-connector-7.5.0.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/cisco-device-connector-7.5.0-rc3/cisco-device-connector-7.5.0.tgz
     version: 7.5.0
   - annotations:
       appType: Service
@@ -7860,4 +7860,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-05-12T20:06:19.134449162Z"
+generated: "2026-05-20T14:23:16.5673034Z"
