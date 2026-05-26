@@ -841,6 +841,49 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/cluster-mgmt-1.0.19.tgz
     version: 1.0.19
+  cnaos:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support for Cloud Native CN-AOS Control Plane
+        - kind: added
+          description: Support for Kubernetes 1.34
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/links: |
+        - name: Nutanix CN-AOS Documentation
+          url: https://portal.nutanix.com/page/documents/list?type=software&filterKey=software&filterVal=Nutanix%20Cloud%20Native%20AOS
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-05-26T06:23:21.804742407Z"
+    dependencies:
+    - condition: deployment.baremetalNkp.enabled
+      name: cnaos-baremetal-nkp
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0
+    description: A Helm chart for Deploying Nutanix Cloud Native AOS. Cloud Native
+      AOS allows you to leverage nutanix enterprise storage and data management for
+      containerized applications running on Kubernetes.
+    digest: 1c5e7406acefbe92e09f52f9210e6baf8dc521b36993878e37fbbfca3769c2fe
+    home: https://www.nutanix.com/products/kubernetes-management-platform/cloud-native-aos
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - Nutanix
+    - Cloud Native AOS
+    - AOS
+    kubeVersion: ~1.34.0-0
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: cnaos
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-110-helm-release/cnaos-1.1.0.tgz
+    version: 1.1.0
   cnaos-baremetal-nkp:
   - annotations:
       artifacthub.io/changes: |
@@ -8023,4 +8066,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-05-26T06:13:50.87564855Z"
+generated: "2026-05-26T06:23:21.793656841Z"
