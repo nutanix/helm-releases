@@ -841,6 +841,71 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/cluster-mgmt-1.0.19.tgz
     version: 1.0.19
+  cnaos-baremetal-nkp:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support for Cloud Native CN-AOS Control Plane
+        - kind: added
+          description: Support for Nutanix Kubernetes Platform on Baremetal
+        - kind: added
+          description: Support for Kubernetes 1.34
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/links: |
+        - name: Nutanix CN-AOS Documentation
+          url: https://portal.nutanix.com/page/documents/list?type=software&filterKey=software&filterVal=Nutanix%20Cloud%20Native%20AOS
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-05-26T06:13:50.88873508Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-1198-prod
+    - name: ncs-cluster-operator
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-3566-prod
+    - name: ncs-control-plane-operator
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-1139-prod
+    - name: cnaos-host-manager
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-309-prod
+    - name: cnaos-pvc-populator
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-174-prod
+    - name: cnaos-lvm-vg-operator
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-132-prod
+    - name: ncs-nxctl
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-2171-prod
+    - name: ncs-metadata-exporter
+      repository: https://nutanix.github.io/helm-releases
+      version: 1.1.0-274-prod
+    description: A Helm chart for Deploying Nutanix Cloud Native AOS. Cloud Native
+      AOS allows you to leverage nutanix enterprise storage and data management for
+      containerized applications running on Baremetal with Nutanix Kubernetes Platform.
+    digest: 7179e91954965072982cea90abe05ae112f84a2025e5f9bfcb75ead21b157291
+    home: https://www.nutanix.com/products/kubernetes-management-platform/cloud-native-aos
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - Nutanix
+    - Cloud Native AOS
+    - AOS
+    kubeVersion: ~1.34.0-0
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: cnaos-baremetal-nkp
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cnaos-110-baremetal-helm-release/cnaos-baremetal-nkp-1.1.0.tgz
+    version: 1.1.0
   cnaos-host-manager:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -7958,4 +8023,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-05-25T18:46:13.172586532Z"
+generated: "2026-05-26T06:13:50.87564855Z"
