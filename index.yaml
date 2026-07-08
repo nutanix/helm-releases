@@ -6331,6 +6331,37 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2026-07-08T05:30:39.444258606Z"
+    dependencies:
+    - condition: clustermgmt-nc2.enabled
+      name: clustermgmt-nc2
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.4
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.21
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 572dca989a8e02e5b0d8e44692a322444d33aa78e2660d17ef59e9f1991dafa8
+    keywords:
+    - security-dashboard
+    - batch-service
+    - objects-lite
+    name: pc-app-aws
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.3.1.14-rc-1/pc-app-aws-7.3.6.tgz
+    version: 7.3.6
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2026-04-15T16:31:24.295665917Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
@@ -6609,6 +6640,32 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2026-07-08T05:30:39.446464122Z"
+    dependencies:
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.21
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 3de81d1e88c90751a4d2ff8c205f743f57aff48df16d7e7787d700e24cb36f17
+    keywords:
+    - batch-service
+    - objects-lite
+    name: pc-app-azure
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.3.1.14-rc-1/pc-app-azure-7.3.7.tgz
+    version: 7.3.7
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2026-04-15T16:31:24.296733299Z"
     dependencies:
     - condition: batch-service.enabled
@@ -6860,6 +6917,32 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/pc.7.5-rc-6/pc-app-gcp-7.5.1.tgz
     version: 7.5.1
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2026-07-08T05:30:39.449921322Z"
+    dependencies:
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.21
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: bd66621f13f038b3985426c42f4317de24c18bddbcff7cf246ab1937bf48af14
+    keywords:
+    - batch-service
+    - objects-lite
+    name: pc-app-gcp
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.3.1.14-rc-1/pc-app-gcp-7.3.3.tgz
+    version: 7.3.3
   - annotations:
       appType: Application
     apiVersion: v2
@@ -8326,4 +8409,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-07-06T06:12:09.771135634Z"
+generated: "2026-07-08T05:30:39.414091582Z"
