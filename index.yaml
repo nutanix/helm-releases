@@ -6265,6 +6265,37 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2026-07-09T17:39:32.546260049Z"
+    dependencies:
+    - condition: clustermgmt-nc2.enabled
+      name: clustermgmt-nc2
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.4
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.11
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.14
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.3
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 10e8ab32bc28dd134ff22f8ef471500176fcd0df1d9177b1580524bc26ea346d
+    keywords:
+    - security-dashboard
+    - batch-service
+    - objects-lite
+    name: pc-app-aws
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.5.1.10-rc-1/pc-app-aws-7.5.12.tgz
+    version: 7.5.12
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2026-03-19T22:48:22.567939928Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
@@ -6589,6 +6620,32 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2026-07-09T17:39:32.548768285Z"
+    dependencies:
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.11
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.14
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.3
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 9070410f701c043865edb21f46111d7cc96ed351ba351acb2fff9df4dc6482e6
+    keywords:
+    - batch-service
+    - objects-lite
+    name: pc-app-azure
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.5.1.10-rc-1/pc-app-azure-7.5.12.tgz
+    version: 7.5.12
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2026-03-19T22:48:22.568988249Z"
     dependencies:
     - condition: batch-service.enabled
@@ -6869,6 +6926,32 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2026-07-09T17:39:32.552477204Z"
+    dependencies:
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.11
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.14
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.3
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: d10a4c882f40d4138636564b4a7096069851fac6933a5e83798f7ac64d5d1c87
+    keywords:
+    - batch-service
+    - objects-lite
+    name: pc-app-gcp
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.5.1.10-rc-1/pc-app-gcp-7.5.4.tgz
+    version: 7.5.4
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2026-03-19T22:48:22.570117714Z"
     dependencies:
     - condition: batch-service.enabled
@@ -6978,6 +7061,62 @@ entries:
     - https://github.com/nutanix/helm-releases/releases/download/pc.7.3.1.1-rc-2/pc-app-gcp-7.3.1.tgz
     version: 7.3.1
   pc-app-onprem:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2026-07-09T17:39:32.557448208Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.12
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.3
+    - condition: marina.enabled
+      name: marina
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.2.11
+    - condition: licensing-app.enabled
+      name: licensing-app
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.13
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.11
+    - condition: mitra-service.enabled
+      name: mitra-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.0
+    - condition: dlv.enabled
+      name: dlv
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      tags:
+      - small
+      - large
+      - xlarge
+      version: 7.5.4
+    - condition: ikat-alpine.enabled
+      name: ikat-alpine
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: d9bb52bd69d5630deb5c0c02be38dd7c9dc451e909d1c92ba56663585e2883e3
+    keywords:
+    - security-dashboard
+    - objects-lite
+    - marina
+    - licensing-app
+    - batch-service
+    - mitra-service
+    - dlv
+    - ikat-alpine
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.5.1.10-rc-1/pc-app-onprem-7.5.43.tgz
+    version: 7.5.43
   - annotations:
       appType: Application
     apiVersion: v2
@@ -8409,4 +8548,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-07-08T05:30:39.414091582Z"
+generated: "2026-07-09T17:39:32.542463663Z"
