@@ -6078,6 +6078,24 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/flow-container-security-1.0.0-release-helm-chart/nutanix-core-flow-container-security-1.0.0.tgz
     version: 1.0.0
+  nutanix-core-pc-nim-umbrella:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2026-07-21T09:14:58.456995381Z"
+    dependencies:
+    - condition: nutanix-infrastructure-manager.enabled
+      name: nutanix-infrastructure-manager
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.6.0
+    description: An Umbrella Helm chart representing the NIM Application
+    digest: 37bd5d25a34ce87e676b73abb2bec7d0199b15dae59c47dcd5eae6ececed0838
+    keywords:
+    - nutanix-infrastructure-manager
+    name: nutanix-core-pc-nim-umbrella
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/nutanix-core-pc-nim-umbrella-7.6.0-756af40b4d598a92ab291429c35d46201c4a522285068b107487d3cf3d/nutanix-core-pc-nim-umbrella-7.6.0.tgz
+    version: 7.6.0
   nutanix-csi-snapshot:
   - annotations:
       artifacthub.io/changes: |
@@ -9419,4 +9437,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-07-20T23:05:14.874040596Z"
+generated: "2026-07-21T09:14:58.455980075Z"
