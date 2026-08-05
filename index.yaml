@@ -3020,6 +3020,24 @@ entries:
   - annotations:
       appType: Service
     apiVersion: v2
+    appVersion: 1.2.0
+    created: "2026-08-05T16:17:12.14630116Z"
+    description: A Helm chart for Flux Service
+    digest: 9eca298a4be4b44792600cc9d8cbf5fbdf9bef4d1f2aae9930ad5a72d4a86655
+    keywords:
+    - nutanix
+    - power
+    maintainers:
+    - email: rajamokshagna.k@nutanix.com
+      name: Mokshagna Krishna
+    name: flux
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/flux-chart-1.2.0-stage/flux-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      appType: Service
+    apiVersion: v2
     appVersion: 1.1.0
     created: "2025-06-09T07:36:24.488975125Z"
     description: A Helm chart for Flux Service
@@ -9602,4 +9620,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-04T19:35:32.133328399Z"
+generated: "2026-08-05T16:17:12.14429617Z"
