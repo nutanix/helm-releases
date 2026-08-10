@@ -9125,7 +9125,7 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2026-03-11T16:33:29.924165662Z"
+    created: "2026-08-10T08:44:40.358568215Z"
     dependencies:
     - condition: security-dashboard.enabled
       name: security-dashboard
@@ -9172,7 +9172,7 @@ entries:
       - xlarge
       version: 0.1.12
     description: An Umbrella Helm chart representing the PC Platform
-    digest: 69cb1f035e0ac8aa777367223f82462500be9d60d4e236915074a85de6febfd5
+    digest: cb949bc7861feeef4997582853fb7ee0bc2282466a5952c9432f7c3ddbdd08eb
     keywords:
     - security-dashboard
     - objects-lite
@@ -9185,7 +9185,7 @@ entries:
     - msp-prometheus-collector
     name: pc-app-onprem
     urls:
-    - https://github.com/nutanix/helm-releases/releases/download/ganges-7.3.1.6-stable-pc-missing/pc-app-onprem-7.3.47.tgz
+    - https://github.com/nutanix/helm-releases/releases/download/pc.7.3.1.16-rc-1/pc-app-onprem-7.3.47.tgz
     version: 7.3.47
   - annotations:
       appType: Application
@@ -10329,4 +10329,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-06T19:53:27.790697434Z"
+generated: "2026-08-10T08:44:40.353046334Z"
