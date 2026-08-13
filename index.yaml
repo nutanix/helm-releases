@@ -4106,6 +4106,50 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-08-13T08:52:49.670673714Z"
+    dependencies:
+    - alias: create-namespace
+      condition: create-namespace.enabled
+      name: nc-onprem-create-namespace
+      repository: file://../create-namespace
+      version: 1.0.0
+    - condition: cpaas-common-utilities-role.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.0
+    - condition: cpaas-common-utilities-job.enabled
+      name: cpaas-common-utilities-job
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.20
+    - condition: cpaas-istio.enabled
+      name: cpaas-istio
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 2.1.0
+    - condition: cpaas-valkey-operator.enabled
+      name: cpaas-valkey-operator
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.1.0
+    - condition: cloudnative-pg.enabled
+      name: cloudnative-pg
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.27.4
+    description: An Umbrella Helm chart for CPaaS components
+    digest: be16455534691c72999df1a498eda403738e862d2032aac2cc102616d390c12b
+    keywords:
+    - metallb
+    - cpaas-istio
+    - reloader
+    - cloudnative-pg
+    - cpaas-common
+    name: nc-cpaas
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/NC_2.1.0_Release_Charts/nc-cpaas-1.0.17.tgz
+    version: 1.0.17
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-08-04T19:35:32.14912429Z"
     dependencies:
     - alias: create-namespace
@@ -6498,6 +6542,92 @@ entries:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/neuron-1.0.16.tgz
     version: 1.0.16
   nutanix-central:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-08-13T08:52:49.69246201Z"
+    dependencies:
+    - alias: create-namespace
+      condition: create-namespace.enabled
+      name: nc-onprem-create-namespace
+      repository: file://../create-namespace
+      version: 1.0.0
+    - alias: cpaas-common-utilities-role-nc
+      condition: cpaas-common-utilities-role-nc.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.0
+    - alias: cpaas-common-utilities-job-nc
+      condition: cpaas-common-utilities-job-nc.enabled
+      name: cpaas-common-utilities-job
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.20
+    - condition: nc-valkey-cluster.enabled
+      name: nc-valkey-cluster
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.0.1
+    - condition: nc-cloudnative-pg-cluster.enabled
+      name: nc-cloudnative-pg-cluster
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.0.10
+    - alias: iamv2
+      condition: iamv2.enabled
+      name: nc-onprem-iamv2
+      repository: file://../iamv2
+      version: 1.0.2
+    - alias: nc-jobs
+      condition: nc-jobs.enabled
+      name: nc-onprem-jobs
+      repository: file://../nc-jobs
+      version: 1.0.0
+    - alias: secretstore-gen-job
+      condition: secretstore-gen-job.enabled
+      name: nc-onprem-jobs
+      repository: file://../nc-jobs
+      version: 1.0.0
+    - alias: ikathub
+      condition: ikathub.enabled
+      name: nc-onprem-ikathub
+      repository: file://../ikathub
+      version: 1.0.2
+    - alias: nc-services
+      condition: nc-services.enabled
+      name: nc-onprem
+      repository: file://../nc-services
+      version: 1.0.0
+    - condition: cpaas-nats-helm.enabled
+      name: cpaas-nats-helm
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.1.1
+    - condition: cpaas-nats-entities.enabled
+      name: cpaas-nats-entities
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.20.0
+    - condition: nc-backup.enabled
+      name: nc-backup
+      repository: file://../nc-backup
+      version: 1.0.0
+    - condition: nc-reloader.enabled
+      name: nc-reloader
+      repository: file://../nc-reloader
+      version: 0.0.105
+    description: An umbrella Helm chart for deployment of Nutanix Central on-premises
+      components
+    digest: 03ec238b85ab25b99e7caa649e29e0d5b590264cba703da071737b96d31936e2
+    keywords:
+    - nc-onprem-iamv2
+    - nc-onprem-jobs
+    - nc-onprem-ikathub
+    - nc-onprem
+    - cpaas-nats-helm
+    - cpaas-nats-entities
+    - nc-valkey-cluster
+    name: nutanix-central
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/NC_2.1.0_Release_Charts/nutanix-central-2.1.0-26507.tgz
+    version: 2.1.0-26507
   - annotations:
       appType: Application
     apiVersion: v2
@@ -10329,4 +10459,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-10T08:44:40.353046334Z"
+generated: "2026-08-13T08:52:49.646801385Z"
