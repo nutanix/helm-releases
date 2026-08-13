@@ -10875,6 +10875,36 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/search-1.0.24.tgz
     version: 1.0.24
+  service-provider:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: sp-1.0
+    created: "2026-08-13T09:08:35.24731103Z"
+    dependencies:
+    - alias: create-namespace
+      condition: create-namespace.enabled
+      name: sp-create-namespace
+      repository: file://../create-namespace
+      version: 1.0.0
+    - condition: sp-services.enabled
+      name: sp-services
+      repository: file://../sp-services
+      version: 1.0.0
+    - condition: sp-jobs.enabled
+      name: sp-jobs
+      repository: file://../sp-jobs
+      version: 1.0.0
+    description: An umbrella Helm chart for deployment of Service Provider on-premises
+      components
+    digest: 0b6a9fe18fa6cb98a56c77d0f4ebd891c487584eaac85c4b7cc4f7e7c901b14f
+    keywords:
+    - sp
+    name: service-provider
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/SP_1.0.0_Release_Charts/service-provider-1.0.0-197.1786352495.tgz
+    version: 1.0.0-197.1786352495
   signals-manager:
   - annotations:
       appType: Service
@@ -11195,4 +11225,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-13T08:58:29.422506329Z"
+generated: "2026-08-13T09:08:35.243388388Z"
