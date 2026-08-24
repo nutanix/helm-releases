@@ -7965,6 +7965,26 @@ entries:
     version: 1.0.0
   nutanix-core-flow-container-security:
   - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-08-24T05:34:11.992538783Z"
+    description: A Helm chart for Flow Container Security - EntityGroup Controller
+      and Flow Processor
+    digest: 1c16efd2a83d31ee8808a17d73475f02369a7d476b7b9b7f0edd2b2c2bd246e7
+    keywords:
+    - flow
+    - security
+    - kubernetes
+    - entitygroup
+    - flow-processor
+    - nats
+    maintainers:
+    - name: Nutanix Flow Team
+    name: nutanix-core-flow-container-security
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/flow-container-security-1.1.0-helm-chart/nutanix-core-flow-container-security-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 1.1.0-230
     created: "2026-08-19T12:44:22.12370867Z"
     description: A Helm chart for Flow Container Security - EntityGroup Controller
@@ -11768,4 +11788,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-20T17:44:55.275642564Z"
+generated: "2026-08-24T05:34:11.985512553Z"
