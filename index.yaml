@@ -8075,6 +8075,16 @@ entries:
     version: 1.7.0
   nutanix-core-files-cluster-operator:
   - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2026-10-12T07:04:55.122440739Z"
+    description: A Helm chart for deploying the CN Files operator
+    digest: 9cf915b2164d1c3707f7020c1562c172afddd8f5838fd7752b75b2c7cc863ff4
+    name: nutanix-core-files-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix/helm-releases/releases/download/cn-rwx-charts-1.2.0/nutanix-core-files-cluster-operator-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
     appVersion: 1.1.0
     created: "2026-08-13T15:39:01.257410663Z"
     description: A Helm chart for deploying the CN Files operator
@@ -12359,4 +12369,4 @@ entries:
     urls:
     - https://github.com/nutanix/helm-releases/releases/download/NCM_1.5_Release_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-10-12T06:52:34.020514091Z"
+generated: "2026-10-12T07:04:55.119241853Z"
